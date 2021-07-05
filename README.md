@@ -20,9 +20,12 @@ Term projects for ETH Zurich Introduction to Machine Learning course. Projects w
 ## Results
 
 **Task 1b:** Achieved an RMSE of 2.064
+
 **Task 2:** Evaluation metric for this task was the average of R2 scores of all subtasks. Achieved an average R2 score of 0.769 (min. 0.692, max. 0.941). 
 * **Subtask 1:** Average AUROC for all the labels classified 0.745 
 * **Subtask 2:** AUROC 0.692
 * **Subtask 3:** R2 score of 0.752
+
 **Task 3:** Achieved an F1 score of 0.902.
+
 **Task 4:** Classified 70.2% of all triplets correctly.
