@@ -1,4 +1,28 @@
-# Methodology
+## Subtask 1: Ordering of Medical Tests
+
+Here we are interested in anticipating the future needs of the patient. You have to predict whether a certain medical test is ordered by a clinician in the remaining stay. This sub-task is a binary classification : 0 means that there will be no further tests of this kind ordered whereas 1 means that at least one is ordered in the remaining stay.
+
+The corresponding columns containing the binary ground truth in train_labels.csv are: LABEL_BaseExcess, LABEL_Fibrinogen, LABEL_AST, LABEL_Alkalinephos, LABEL_Bilirubin_total, LABEL_Lactate, LABEL_TroponinI, LABEL_SaO2, LABEL_Bilirubin_direct, LABEL_EtCO2.
+
+Because there is an imbalance between labels in these sub-tasks we evaluate the performance of a model with the Area Under the Receiver Operating Characteristic Curve, which is a threshold-based metric.
+
+## Subtask 2: Sepsis Prediction
+
+In this sub-task, we are interested in anticipating future life-threatening events. You have to predict whether a patient is likely to have a sepsis event in the remaining stay. This task is also a binary classification : 0 means that no sepsis will occur, 1 otherwise.
+
+The corresponding column containing the binary ground-truth in train_labels.csv is LABEL_Sepsis.
+
+This task is also imbalanced, thus we’ll also evaluate performance using Area Under the Receiver Operating Characteristic Curve.
+
+## Subtask 3: Key Vital Signs Prediction
+
+In this type of sub-task, we are interested in predicting a more general evolution of the patient state. To this effect, here we aim at predicting the mean value of a vital sign in the remaining stay. This is a regression task.
+
+The corresponding columns containing the real-valued ground truth in train_labels.csv are: LABEL_RRate, LABEL_ABPm, LABEL_SpO2, LABEL_Heartrate.
+
+To evaluate the performance of a given model on this sub-task we use R2 Score.
+
+## Methodology
 
 Initially, for every patient we transformed the input data, so, 
 that every measurement that could have been taken (including nans) over their 12 hour state was a feature of that patient.
