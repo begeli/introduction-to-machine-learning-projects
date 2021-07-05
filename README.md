@@ -15,3 +15,14 @@ Term projects for ETH Zurich Introduction to Machine Learning course. Projects w
 **Task 3:** Classify mutations of a human antibody protein into active (1) and inactive (0) based on the provided mutation information.
 
 **Task 4:** Make decisions on food taste similarity based on images and human judgements.
+* Implemented Deep Ranking architecture and used pre-trained resnet18 model as backbone. The inputs are triplets of images where we try to determine which of the 2nd and 3rd images are closest to the 1st image. Our architecture consists of 3 parallel networks (a, p, n) which are query, positive and negative networks respectively. Our networks performs a binary classification where we output 1 if 2nd image in the triplet is closer to 1st image, 0 otherwise.
+
+## Results
+
+**Task 1b:** Achieved an RMSE of 2.064
+**Task 2:** Evaluation metric for this task was the average of R2 scores of all subtasks. Achieved an average R2 score of 0.769 (min. 0.692, max. 0.941). 
+* **Subtask 1:** Average AUROC for all the labels classified 0.745 
+* **Subtask 2:** AUROC 0.692
+* **Subtask 3:** R2 score of 0.752
+**Task 3:** Achieved an F1 score of 0.902.
+**Task 4:** Classified 70.2% of all triplets correctly.
