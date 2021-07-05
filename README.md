@@ -29,3 +29,9 @@ Term projects for ETH Zurich Introduction to Machine Learning course. Projects w
 **Task 3:** Achieved an F1 score of 0.902.
 
 **Task 4:** Classified 70.2% of all triplets correctly.
+
+## Contributors
+
+* Bartu Soyuer
+* Gizem Yüce
+* Berke Egeli
