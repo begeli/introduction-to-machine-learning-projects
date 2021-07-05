@@ -26,9 +26,9 @@ Term projects for ETH Zurich Introduction to Machine Learning course. Projects w
 * **Subtask 2:** AUROC 0.692
 * **Subtask 3:** Average R2 score of 0.752 for all the output labels
 
-**Task 3:** Achieved an F1 score of 0.902.
+**Task 3:** Achieved an F1 score of 0.902
 
-**Task 4:** Classified 70.2% of all triplets correctly.
+**Task 4:** Classified 70.2% of all triplets correctly
 
 ## Contributors
 
